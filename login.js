@@ -16,7 +16,7 @@ createApp({
         .post(apiUrl, this.user)
         .then((res) => {
           const {token, expired} = res.data;
-          document.cookie = `hexToken=${token}; expires=${new Date(expired)}; path=/`;
+          document.cookie = `hexToken=${token};expires=${new Date(expired)}; path=/`;
           window.location = 'products.html';
         })
         .catch((err) => {
