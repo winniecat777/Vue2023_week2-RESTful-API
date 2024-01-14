@@ -36,14 +36,15 @@
           請先登入
         </h1>
         <div class="col-8">
-          <form id="form" class="form-signin">
+          <form id="form" class="form-signin" @submit.prevent="login">
+            <!-- @submit 意思是監聽表單的提交事件，.prevent 則是一個修飾符，用於觸發事件時執行 event.preventDefault()禁止表單的預設提交行為，避免頁面的跳轉，並改用 login 這個自訂函式來執行提交後的行為 -->
             <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="username"
+              <input type="email" class="form-control" v-model="user.username" id="username"
                 placeholder="name@example.com" required autofocus>
               <label for="username">Email address</label>
             </div>
             <div class="form-floating">
-              <input type="password" class="form-control" id="password"
+              <input type="password" class="form-control" v-modle="user.password" id="password"
                 placeholder="Password" required>
               <label for="password">Password</label>
             </div>

@@ -4,5 +4,6 @@
     "titleBar.activeBackground": "#3D4312",
     "titleBar.activeForeground": "#FAFBF2"
   },
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "liveServer.settings.port": 5502
 }
