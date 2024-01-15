@@ -4,7 +4,7 @@ createApp({
   data() {
     return {
       apiUrl:'https://vue3-course-api.hexschool.io/v2',
-      apiPath:'winnie03',
+      apiPath:'winnie04',
       products:[],
       tempProduct:{}
     };
@@ -15,7 +15,7 @@ createApp({
       axios
         .post(url)
         .then(() => {
-          console.log('驗證成功！');
+          // console.log('驗證成功！');
           this.getProducts();
         })
         .catch((err) => {
