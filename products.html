@@ -48,16 +48,16 @@
               </tr>
             </thead>
             <tbody>
-              <tr v-for="product in products" :key="product.id">
-                <td width="150">{{ product.title }}</td>
+              <tr v-for="item in products" :key="item.id">
+                <td width="150">{{ item.title }}</td>
                 <td width="120">
-                  {{ product.origin_price }}
+                  {{ item.origin_price }}
                 </td>
                 <td width="120">
-                  {{ product.price }}
+                  {{ item.price }}
                 </td>
                 <td width="150">
-                  <span class="text-success" v-if="product.is_enabled">啟用</span>
+                  <span class="text-success" v-if="item.is_enabled">啟用</span>
                   <span v-else>未啟用</span>
                 </td>
                 <td width="120">
