@@ -39,7 +39,7 @@ createApp({
     }
   },
   mounted() {
-    const token = document.cookie.replase(/(?:(?:^|.*;\s*)hexToken\s*=\s*([^;]*).*$)|^.*$/, '$1');
+    const token = document.cookie.replace(/(?:(?:^|.*;\s*)hexToken\s*=\s*([^;]*).*$)|^.*$/, '$1');
     axios.defaults.headers.common.Authorization = token;
     this.checkAdmin()
   }
