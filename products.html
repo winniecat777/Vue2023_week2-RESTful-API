@@ -87,7 +87,7 @@
                 </div>
               </div>
             </div>
-            <template v-for="(image, key) in tempProduct.imageUrl" :key="key">
+            <template v-for="(image, key) in tempProduct.imagesUrl" :key="key">
               <img v-if="image" :src="image" alt="`多圖 ${key+1}`" class="images m-2">
             </template>
           </template>
